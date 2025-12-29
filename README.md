@@ -16,12 +16,12 @@
 * **🔄 Image-to-Image:** Transform and enhance images using AI with text prompts.
 * **💾 Auto Download:** Automatically save videos and images to your machine immediately after rendering finishes. Supports folder organization by project name.
 * **🛡️ Retry Mechanism:** Automatically retry when encountering network errors or when Google's queue is full.
-* **⚙️ Deep Customization:**
-    * Select Model (Veo 2, Veo 3.1...).
-    * Select Aspect Ratio (16:9, 9:16, 1:1).
-    * Set number of video variants per prompt (1-4 variants).
-    * Configure concurrent prompts (1-6 simultaneous).
-    * Set prompt delay (0-300 seconds).
+* **⚙️ Deep Customization:**  
+   * Select Model (Veo 2, Veo 3.1...).  
+   * Select Aspect Ratio (16:9, 9:16, 1:1).  
+   * Set number of video variants per prompt (1-4 variants).
+   * Configure concurrent prompts (1-6 simultaneous).
+   * Set prompt delay (0-300 seconds).
 
 -----
 

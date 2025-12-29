@@ -8,20 +8,20 @@
 
 ## ✨ Tính năng chính
 
-* **🚀 Hàng đợi thông minh:** Thêm một loạt prompt hoặc hình ảnh vào danh sách chờ. Công cụ sẽ tự động xử lý từng tác vụ một.
-* **📝 Văn bản thành Video:** Hỗ trợ nhập file `.txt` chứa hàng trăm prompt.
-* **🖼️ Hình ảnh thành Video:** Tự động tải lên hình ảnh, cắt tỷ lệ khung hình và tạo chuyển động.
-* **🎨 Thành phần thành Video:** Tạo hoạt ảnh cho các thành phần UI và yếu tố giao diện thành video.
+* **🚀 Hỗ trợ hàng đợi:** Thêm nhiều prompt vào danh sách chờ thay vì phải thao tác thủ công từng prompt. Công cụ sẽ tự động xử lý lần lượt từng tác vụ.
+* **📝 Văn bản thành Video:** Hỗ trợ nhập file `.txt` chứa hàng trăm prompt tạo thành video từ văn bản.
+* **🖼️ Hình ảnh thành Video:** Tạo video bằng khung hình đầu và cuối (start frame, end frame). có thể chọn 1 hoặc 2 mỗi prompt trong phần cài đặt
+* **🎨 Thành phần thành Video:** Tạo video bằng các ảnh tham chiếu nhân vật
 * **🖼️ Văn bản thành Hình ảnh:** Tạo hình ảnh từ mô tả văn bản.
-* **🔄 Hình ảnh thành Hình ảnh:** Chuyển đổi và nâng cấp hình ảnh bằng AI với prompt văn bản.
+* **🔄 Hình ảnh thành Hình ảnh:** Tạo hình ảnh từ ảnh tham chiếu nhân vật
 * **💾 Tự động tải xuống:** Tự động lưu video và hình ảnh vào máy của bạn ngay sau khi render xong. Hỗ trợ tổ chức thư mục theo tên dự án.
-* **🛡️ Cơ chế thử lại:** Tự động thử lại khi gặp lỗi mạng hoặc khi hàng đợi của Google đầy.
-* **⚙️ Tùy chỉnh sâu:**
-    * Chọn Mô hình (Veo 2, Veo 3.1...).
-    * Chọn Tỷ lệ khung hình (16:9, 9:16, 1:1).
-    * Đặt số lượng biến thể video mỗi prompt (1-4 biến thể).
-    * Cấu hình prompt đồng thời (1-6 prompt cùng lúc).
-    * Đặt độ trễ prompt (0-300 giây).
+* **🛡️ Cơ chế thử lại:** Tự động thử lại khi gặp lỗi mạng hoặc Google tạo lỗi.
+* **⚙️ Tùy chỉnh sâu:**  
+   * Chọn Mô hình (Veo 3.1 Fast, ...).  
+   * Chọn Tỷ lệ khung hình (16:9, 9:16, 1:1).  
+   * Đặt số lượng video tải về chô mỗi prompt (1-4 video).
+   * Cấu hình chạy đồng thời (1-6 prompt cùng lúc).
+   * Đặt độ trễ mỗi lần tạo prompt (0-300 giây).
 
 -----
 
@@ -29,16 +29,6 @@
 
 ### Phương pháp 1: Chrome Web Store (Khuyến nghị)
 1. Truy cập [Chrome Web Store](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
-2. Nhấp "Thêm vào Chrome"
-
-### Phương pháp 2: Cài đặt thủ công
-1. Tải xuống file ZIP của tiện ích
-2. Giải nén file ZIP
-3. Mở Chrome và điều hướng đến `chrome://extensions/`
-4. Bật "Chế độ nhà phát triển" (công tắc ở góc trên bên phải)
-5. Nhấp "Tải tiện ích đã giải nén"
-6. Chọn thư mục đã giải nén
-
 ---
 
 ## 📖 Hướng dẫn sử dụng
@@ -50,8 +40,7 @@
    - Tiện ích chỉ hoạt động trên trang dự án Flow
 
 2. **Mở tiện ích**
-   - Nhấp vào biểu tượng tiện ích trong thanh công cụ Chrome
-   - Hoặc sử dụng bảng điều khiển bên (nếu được bật)
+   - Nhấp vào biểu tượng tiện ích trong thanh công cụ Chrome và ghim lại để lần sau sử dụng chỉ cần ấn vào tiện ích rồi sử dụng luôn sẽ thuận tiện hơn
 
 3. **Chọn chế độ**
    - Chọn từ 5 chế độ tạo trong tab Điều khiển
@@ -60,8 +49,8 @@
 ### 1. Chế độ Văn bản thành Video
 
 1. Chọn chế độ **Văn bản thành Video** trong tab Điều khiển.
-2. Nhập prompt vào hộp trống (mỗi prompt phân tách bằng dòng trống) HOẶC nhấp nút **Tải lên file (.txt)** để tải lên danh sách prompt.
-3. Đặt số lượng video và tỷ lệ khung hình.
+2. Nhập prompt vào ô nhập (mỗi prompt phân tách bằng dòng trống) HOẶC nhấp nút **Tải lên file (.txt)** để tải lên danh sách prompt.
+3. Cấu hình cài đặt thời lượng (8s hoặc Nối tiếp).
 4. Nhấp **Chạy** để bắt đầu xử lý hàng loạt.
 5. Theo dõi tiến độ trong phần tiến độ.
 
@@ -84,21 +73,21 @@ Xe cộ và người đi bộ di chuyển qua khung cảnh.
 
 **Mẹo:**
 - Hình ảnh được xử lý với mỗi prompt
-- Sắp xếp hình ảnh theo tên, ngày hoặc thứ tự tùy chỉnh
-- Tối đa 2 hình ảnh mỗi prompt (có thể cấu hình trong cài đặt)
+- Sắp xếp hình ảnh theo tên, ngày hoặc thứ tự tùy chỉnh bằng cách kéo thả các ảnh
+- Sử dụng 1-2 hình ảnh mỗi prompt (có thể cấu hình trong cài đặt)
 
 ### 3. Chế độ Thành phần thành Video
 
 1. Chọn chế độ **Thành phần thành Video**.
 2. Tải lên hình ảnh thành phần.
-3. Bật "Tự động thêm ảnh nhân vật" (tùy chọn) - tự động khớp ảnh nhân vật dựa trên tên file.
-4. Nhập prompt mô tả hoạt ảnh.
+3. Nhập prompt mô tả hoạt ảnh.
+4. Bật "Tự động thêm ảnh nhân vật" (tùy chọn) - tự động khớp ảnh nhân vật dựa trên tên file. Ví dụ prompt: dog.png, cat.png, duck.png prompt: dog playing with cat, thì ảnh dog.png và cat.png sẽ được thêm vào prompt
 5. Nhấp **Chạy** để tạo video.
 
 **Tính năng:**
 - Tự động khớp ảnh nhân vật dựa trên tên file
 - Hỗ trợ tối đa 3 hình ảnh mỗi prompt
-- Hoàn hảo cho việc tạo hoạt ảnh các thành phần UI
+- Sử dụng tốt cho việc đồng bộ nhân vật
 
 ### 4. Chế độ Văn bản thành Hình ảnh
 
@@ -107,18 +96,25 @@ Xe cộ và người đi bộ di chuyển qua khung cảnh.
 3. Cấu hình tỷ lệ khung hình và mô hình hình ảnh trong Cài đặt.
 4. Nhấp **Chạy** để tạo hình ảnh.
 
+**Tính năng:**
+- Hỗ trợ tải ảnh 4k/2k/1k
+
 ### 5. Chế độ Hình ảnh thành Hình ảnh
 
 1. Chọn chế độ **Hình ảnh thành Hình ảnh**.
 2. Tải lên hình ảnh nguồn.
 3. Nhập prompt chuyển đổi.
 4. Cấu hình cài đặt (tối đa 10 hình ảnh mỗi prompt).
-5. Nhấp **Chạy** để chuyển đổi hình ảnh.
+5. Bật "Tự động thêm ảnh nhân vật" (tùy chọn) - tự động khớp ảnh nhân vật dựa trên tên file. Ví dụ prompt: dog.png, cat.png, duck.png prompt: dog playing with cat, thì ảnh dog.png và cat.png sẽ được thêm vào prompt
+6. Nhấp **Chạy** để tạo ảnh dựa trên ảnh tham chiếu
+
+**Tính năng:**
+- Hỗ trợ tải ảnh 4k/2k/1k
 
 ### Quản lý Hàng đợi
 
 * Xem danh sách tác vụ đang chờ trong phần Hàng đợi Prompt.
-* Bạn có thể **Xóa** tác vụ thừa hoặc **Dừng** tác vụ đang chạy.
+* Bạn có thể **Xóa** tác vụ đã chạy hoặc **Dừng** tác vụ đang chạy.
 * Theo dõi tiến độ theo thời gian thực cho mỗi prompt.
 
 ---
@@ -128,9 +124,9 @@ Xe cộ và người đi bộ di chuyển qua khung cảnh.
 Truy cập tab **Cài đặt** để tùy chỉnh:
 
 ### Cài đặt chung
-- **Chế độ mặc định**: Đặt chế độ tạo ưa thích của bạn
-- **Tỷ lệ khung hình mặc định**: Chọn 16:9, 9:16 hoặc 1:1
-- **Số đầu ra mỗi prompt**: 1-4 đầu ra
+- **Chế độ mặc định**: Đặt chế độ tạo bạn hay dùng để mở tiện ích tự chọn cho bạn
+- **Tỷ lệ khung hình mặc định**: Chọn 16:9, 9:16
+- **Số đầu ra mỗi prompt**: 1-4 số lượng ảnh hoặc video bạn muốn tạo mỗi prompt
 - **Prompt đồng thời**: 1-6 prompt cùng lúc
 - **Độ trễ Prompt**: Thời gian chờ giữa các prompt (0-300 giây)
 
@@ -156,22 +152,20 @@ Truy cập tab **Cài đặt** để tùy chỉnh:
 
 1. **Viết Prompt**
    - Cụ thể về phong cách, thời lượng và yếu tố hình ảnh
-   - Sử dụng ngôn ngữ rõ ràng, mô tả
-   - Phân tách nhiều prompt bằng dòng trống
+   - Nên sử dụng prompt tiếng anh
+   - Để chạy nhiều prompt mỗi prompt cách 1 dòng trống
 
 2. **Xử lý hàng loạt**
-   - Bắt đầu với ít prompt đồng thời để kiểm tra
-   - Điều chỉnh độ trễ dựa trên nhu cầu của bạn
-   - Theo dõi phần tiến độ để biết trạng thái
+   - Các bác nên để tầm 3 prompt đồng thời nếu flow ít bị lỗi và để là 2 nếu vào giờ cao điểm
+   - Điều chỉnh độ trễ khoảng 30s
 
 3. **Quản lý hình ảnh**
    - Đặt tên hình ảnh rõ ràng để tự động khớp
    - Sử dụng định dạng được hỗ trợ (PNG, JPG, GIF)
-   - Giữ kích thước file dưới 10MB
 
 4. **Hiệu suất**
    - Ít prompt đồng thời = ổn định hơn
-   - Độ trễ cao hơn = ít tải máy chủ hơn
+   - Độ trễ cao hơn = ổn định hơn
    - Sử dụng cài đặt chất lượng phù hợp cho tải xuống
 
 ---
@@ -181,7 +175,7 @@ Truy cập tab **Cài đặt** để tùy chỉnh:
 | Vấn đề                     | Nguyên nhân & Giải pháp                                                                                                                                                     |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Tiện ích không hoạt động** | Đảm bảo bạn đang ở trang dự án Google Flow. Kiểm tra xem tiện ích đã được bật chưa. Làm mới trang và thử lại.                                                               |
-| **Lỗi "Hàng đợi đầy"**    | Google Flow giới hạn số lượng video được xử lý đồng thời. **Đừng lo lắng**, Tiện ích sẽ tự động chờ và thử lại mỗi 30s cho đến khi có chỗ trống.                            |
+| **Lỗi không thể tạo được video**    | Google Flow thi thoảng bị quá tải. **Đừng lo**, Tiện ích sẽ tự động chờ và thử lại mỗi 30s cho đến khi có chỗ trống.                            |
 | **Video không tải xuống** | Đi tới Cài đặt Chrome -> Tải xuống -> **Tắt** _"Hỏi nơi lưu mỗi file trước khi tải xuống"_. Kiểm tra cài đặt tải xuống trong tab Cài đặt.                                    |
 | **Lỗi "Chính sách"**      | Prompt hoặc hình ảnh của bạn vi phạm chính sách nội dung của Google. Công cụ sẽ tự động bỏ qua tác vụ này và tiếp tục với tác vụ tiếp theo.                                   |
 | **Tạo thất bại**           | Kiểm tra kết nối internet của bạn. Xác minh prompt hợp lệ. Xem lại cài đặt thử lại. Kiểm tra console trình duyệt để tìm lỗi.                                                 |
