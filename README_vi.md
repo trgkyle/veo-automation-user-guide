@@ -1,0 +1,226 @@
+# 🎬 VEO Automation - Tự động hóa Google Flow AI VEO
+
+**VEO Automation** là một tiện ích mở rộng Chrome mạnh mẽ giúp tự động hóa việc tạo video và hình ảnh hàng loạt trên Google Flow AI VEO3. Xử lý nhiều prompt cùng lúc, cấu hình quy trình làm việc và tự động tải xuống nội dung đã tạo một cách dễ dàng.
+
+[English](README.md) | [中文](README_zh.md)
+
+---
+
+## ✨ Tính năng chính
+
+* **🚀 Hàng đợi thông minh:** Thêm một loạt prompt hoặc hình ảnh vào danh sách chờ. Công cụ sẽ tự động xử lý từng tác vụ một.
+* **📝 Văn bản thành Video:** Hỗ trợ nhập file `.txt` chứa hàng trăm prompt.
+* **🖼️ Hình ảnh thành Video:** Tự động tải lên hình ảnh, cắt tỷ lệ khung hình và tạo chuyển động.
+* **🎨 Thành phần thành Video:** Tạo hoạt ảnh cho các thành phần UI và yếu tố giao diện thành video.
+* **🖼️ Văn bản thành Hình ảnh:** Tạo hình ảnh từ mô tả văn bản.
+* **🔄 Hình ảnh thành Hình ảnh:** Chuyển đổi và nâng cấp hình ảnh bằng AI với prompt văn bản.
+* **💾 Tự động tải xuống:** Tự động lưu video và hình ảnh vào máy của bạn ngay sau khi render xong. Hỗ trợ tổ chức thư mục theo tên dự án.
+* **🛡️ Cơ chế thử lại:** Tự động thử lại khi gặp lỗi mạng hoặc khi hàng đợi của Google đầy.
+* **⚙️ Tùy chỉnh sâu:**  
+   * Chọn Mô hình (Veo 2, Veo 3.1...).  
+   * Chọn Tỷ lệ khung hình (16:9, 9:16, 1:1).  
+   * Đặt số lượng biến thể video mỗi prompt (1-4 biến thể).
+   * Cấu hình prompt đồng thời (1-6 prompt cùng lúc).
+   * Đặt độ trễ prompt (0-300 giây).
+
+---
+
+## 📥 Cài đặt
+
+### Phương pháp 1: Chrome Web Store (Khuyến nghị)
+1. Truy cập Chrome Web Store
+2. Tìm kiếm "VEO Automation"
+3. Nhấp "Thêm vào Chrome"
+
+### Phương pháp 2: Cài đặt thủ công
+1. Tải xuống file ZIP của tiện ích
+2. Giải nén file ZIP
+3. Mở Chrome và điều hướng đến `chrome://extensions/`
+4. Bật "Chế độ nhà phát triển" (công tắc ở góc trên bên phải)
+5. Nhấp "Tải tiện ích đã giải nén"
+6. Chọn thư mục đã giải nén
+
+---
+
+## 📖 Hướng dẫn sử dụng
+
+### Bắt đầu
+
+1. **Điều hướng đến Google Flow**
+   - Mở [Google Labs Flow](https://labs.google/fx/tools/flow)
+   - Tiện ích chỉ hoạt động trên trang dự án Flow
+
+2. **Mở tiện ích**
+   - Nhấp vào biểu tượng tiện ích trong thanh công cụ Chrome
+   - Hoặc sử dụng bảng điều khiển bên (nếu được bật)
+
+3. **Chọn chế độ**
+   - Chọn từ 5 chế độ tạo trong tab Điều khiển
+   - Mỗi chế độ có tính năng và yêu cầu cụ thể
+
+### 1. Chế độ Văn bản thành Video
+
+1. Chọn chế độ **Văn bản thành Video** trong tab Điều khiển.
+2. Nhập prompt vào hộp trống (mỗi prompt phân tách bằng dòng trống) HOẶC nhấp nút **Tải lên file (.txt)** để tải lên danh sách prompt.
+3. Đặt số lượng video và tỷ lệ khung hình.
+4. Nhấp **Chạy** để bắt đầu xử lý hàng loạt.
+5. Theo dõi tiến độ trong phần tiến độ.
+
+**Ví dụ Prompt:**
+```
+Hoàng hôn yên bình trên đại dương êm đềm với sóng nhẹ.
+Máy quay từ từ quét ngang đường chân trời.
+
+Phố phường nhộn nhịp vào ban đêm với đèn neon.
+Xe cộ và người đi bộ di chuyển qua khung cảnh.
+```
+
+### 2. Chế độ Hình ảnh thành Video
+
+1. Chọn chế độ **Hình ảnh thành Video**.
+2. Nhấp **Chọn hình ảnh** để tải lên (hỗ trợ chọn nhiều hình ảnh cùng lúc).
+3. Nhập prompt cho mỗi hình ảnh (phân tách bằng dòng trống).
+4. Cấu hình cài đặt thời lượng (8s hoặc Nối tiếp).
+5. Nhấp **Chạy** để xử lý.
+
+**Mẹo:**
+- Hình ảnh được xử lý với mỗi prompt
+- Sắp xếp hình ảnh theo tên, ngày hoặc thứ tự tùy chỉnh
+- Tối đa 2 hình ảnh mỗi prompt (có thể cấu hình trong cài đặt)
+
+### 3. Chế độ Thành phần thành Video
+
+1. Chọn chế độ **Thành phần thành Video**.
+2. Tải lên hình ảnh thành phần.
+3. Bật "Tự động thêm ảnh nhân vật" (tùy chọn) - tự động khớp ảnh nhân vật dựa trên tên file.
+4. Nhập prompt mô tả hoạt ảnh.
+5. Nhấp **Chạy** để tạo video.
+
+**Tính năng:**
+- Tự động khớp ảnh nhân vật dựa trên tên file
+- Hỗ trợ tối đa 3 hình ảnh mỗi prompt
+- Hoàn hảo cho việc tạo hoạt ảnh các thành phần UI
+
+### 4. Chế độ Văn bản thành Hình ảnh
+
+1. Chọn chế độ **Văn bản thành Hình ảnh**.
+2. Nhập mô tả hình ảnh chi tiết.
+3. Cấu hình tỷ lệ khung hình và mô hình hình ảnh trong Cài đặt.
+4. Nhấp **Chạy** để tạo hình ảnh.
+
+### 5. Chế độ Hình ảnh thành Hình ảnh
+
+1. Chọn chế độ **Hình ảnh thành Hình ảnh**.
+2. Tải lên hình ảnh nguồn.
+3. Nhập prompt chuyển đổi.
+4. Cấu hình cài đặt (tối đa 10 hình ảnh mỗi prompt).
+5. Nhấp **Chạy** để chuyển đổi hình ảnh.
+
+### Quản lý Hàng đợi
+
+* Xem danh sách tác vụ đang chờ trong phần Hàng đợi Prompt.
+* Bạn có thể **Xóa** tác vụ thừa hoặc **Dừng** tác vụ đang chạy.
+* Theo dõi tiến độ theo thời gian thực cho mỗi prompt.
+
+---
+
+## ⚙️ Cấu hình Cài đặt
+
+Truy cập tab **Cài đặt** để tùy chỉnh:
+
+### Cài đặt chung
+- **Chế độ mặc định**: Đặt chế độ tạo ưa thích của bạn
+- **Tỷ lệ khung hình mặc định**: Chọn 16:9, 9:16 hoặc 1:1
+- **Số đầu ra mỗi prompt**: 1-4 đầu ra
+- **Prompt đồng thời**: 1-6 prompt cùng lúc
+- **Độ trễ Prompt**: Thời gian chờ giữa các prompt (0-300 giây)
+
+### Chọn mô hình
+- **Mô hình Video**: Chọn từ các biến thể Veo 3.1 hoặc Veo 2
+- **Mô hình Hình ảnh**: Chọn mô hình AI cho văn bản thành hình ảnh
+
+### Cài đặt tải xuống
+- **Chất lượng tải xuống tự động (Video)**: 720p, 1080p hoặc Không tải xuống
+- **Chất lượng tải xuống tự động (Hình ảnh)**: 1k, 2k, 4k hoặc Không tải xuống
+- Video được lưu vào thư mục Tải xuống của Chrome
+- Mỗi dự án có thư mục riêng
+
+### Cài đặt nâng cao
+- **Số lần thử lại tối đa**: 1-20 lần thử lại khi thất bại
+- **Khung hình video mặc định**: 8 giây hoặc Nối tiếp
+- **Số hình ảnh tối đa mỗi prompt**: Cấu hình cho mỗi chế độ
+- **Ngôn ngữ**: Tiếng Anh, Tiếng Việt hoặc Tiếng Trung
+
+---
+
+## 💡 Mẹo & Thực hành tốt nhất
+
+1. **Viết Prompt**
+   - Cụ thể về phong cách, thời lượng và yếu tố hình ảnh
+   - Sử dụng ngôn ngữ rõ ràng, mô tả
+   - Phân tách nhiều prompt bằng dòng trống
+
+2. **Xử lý hàng loạt**
+   - Bắt đầu với ít prompt đồng thời để kiểm tra
+   - Điều chỉnh độ trễ dựa trên nhu cầu của bạn
+   - Theo dõi phần tiến độ để biết trạng thái
+
+3. **Quản lý hình ảnh**
+   - Đặt tên hình ảnh rõ ràng để tự động khớp
+   - Sử dụng định dạng được hỗ trợ (PNG, JPG, GIF)
+   - Giữ kích thước file dưới 10MB
+
+4. **Hiệu suất**
+   - Ít prompt đồng thời = ổn định hơn
+   - Độ trễ cao hơn = ít tải máy chủ hơn
+   - Sử dụng cài đặt chất lượng phù hợp cho tải xuống
+
+---
+
+## 🔧 Khắc phục sự cố
+
+| Vấn đề                     | Nguyên nhân & Giải pháp                                                                                                                                                     |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Tiện ích không hoạt động** | Đảm bảo bạn đang ở trang dự án Google Flow. Kiểm tra xem tiện ích đã được bật chưa. Làm mới trang và thử lại.                                                               |
+| **Lỗi "Hàng đợi đầy"**    | Google Flow giới hạn số lượng video được xử lý đồng thời. **Đừng lo lắng**, Tiện ích sẽ tự động chờ và thử lại mỗi 30s cho đến khi có chỗ trống.                            |
+| **Video không tải xuống** | Đi tới Cài đặt Chrome -> Tải xuống -> **Tắt** _"Hỏi nơi lưu mỗi file trước khi tải xuống"_. Kiểm tra cài đặt tải xuống trong tab Cài đặt.                                    |
+| **Lỗi "Chính sách"**      | Prompt hoặc hình ảnh của bạn vi phạm chính sách nội dung của Google. Công cụ sẽ tự động bỏ qua tác vụ này và tiếp tục với tác vụ tiếp theo.                                   |
+| **Tạo thất bại**           | Kiểm tra kết nối internet của bạn. Xác minh prompt hợp lệ. Xem lại cài đặt thử lại. Kiểm tra console trình duyệt để tìm lỗi.                                                 |
+| **Màn hình bị thu nhỏ**    | Đây là tính năng tự động của công cụ để bao phủ giao diện và định vị nút chính xác. Vui lòng không điều chỉnh zoom thủ công khi công cụ đang chạy.                         |
+
+---
+
+## 🔒 Quyền riêng tư & Dữ liệu
+
+* **Hoạt động cục bộ:** VEO Automation chạy hoàn toàn trên trình duyệt của bạn.
+* **Không thu thập dữ liệu:** Chúng tôi không thu thập prompt, hình ảnh hoặc video của bạn. Tất cả dữ liệu chỉ được lưu trong `Chrome Local Storage` của bạn để ghi nhớ cài đặt.
+* **Quyền:** Tiện ích chỉ yêu cầu quyền truy cập vào các trang `labs.google/*` để thực hiện tác vụ tự động hóa.
+
+---
+
+## 📞 Hỗ trợ
+
+- **Tác giả**: Trường Nguyễn
+- **Trang web**: [kylenguyen.me](https://kylenguyen.me)
+- **Báo lỗi**: Sử dụng liên kết "Báo lỗi" trong tiện ích
+
+---
+
+## 📦 Phiên bản
+
+Phiên bản hiện tại: **2.1.2**
+
+---
+
+## 📜 Giấy phép
+
+Bản quyền © 2025 **Trường Nguyễn**. Mọi quyền được bảo lưu.
+
+Phần mềm này là tài sản độc quyền. Việc sao chép, sửa đổi, phân phối mã nguồn trái phép hoặc bán lại dưới bất kỳ hình thức nào mà không có sự cho phép bằng văn bản của tác giả đều bị nghiêm cấm.
+
+---
+
+_Tuyên bố miễn trừ trách nhiệm: Tiện ích mở rộng này là một dự án độc lập và không liên kết, được xác nhận hoặc kết nối với Google hoặc nhóm Google Flow._
+
+**Được tạo với ❤️ bởi Trường Nguyễn**
+
