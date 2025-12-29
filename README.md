@@ -1,10 +1,10 @@
-# 🎬 VEO Automation - Google Flow AI VEO Automation
+[![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
+
+# 🎬 VEO Automation v2.1.2 - Google Flow AI VEO Automation [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![中文](https://img.shields.io/badge/中文-red)](README_zh.md)
 
 **VEO Automation** is a powerful Chrome extension that automates batch video and image generation on Google Flow AI VEO3. Process multiple prompts simultaneously, configure your workflow, and automatically download generated content with ease.
 
-[Tiếng Việt](README_vi.md) | [中文](README_zh.md)
-
----
+-----
 
 ## ✨ Key Features
 
@@ -16,21 +16,20 @@
 * **🔄 Image-to-Image:** Transform and enhance images using AI with text prompts.
 * **💾 Auto Download:** Automatically save videos and images to your machine immediately after rendering finishes. Supports folder organization by project name.
 * **🛡️ Retry Mechanism:** Automatically retry when encountering network errors or when Google's queue is full.
-* **⚙️ Deep Customization:**  
-   * Select Model (Veo 2, Veo 3.1...).  
-   * Select Aspect Ratio (16:9, 9:16, 1:1).  
-   * Set number of video variants per prompt (1-4 variants).
-   * Configure concurrent prompts (1-6 simultaneous).
-   * Set prompt delay (0-300 seconds).
+* **⚙️ Deep Customization:**
+    * Select Model (Veo 2, Veo 3.1...).
+    * Select Aspect Ratio (16:9, 9:16, 1:1).
+    * Set number of video variants per prompt (1-4 variants).
+    * Configure concurrent prompts (1-6 simultaneous).
+    * Set prompt delay (0-300 seconds).
 
----
+-----
 
 ## 📥 Installation
 
 ### Method 1: Chrome Web Store (Recommended)
-1. Visit the Chrome Web Store
-2. Search for "VEO Automation"
-3. Click "Add to Chrome"
+1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
+2. Click "Add to Chrome"
 
 ### Method 2: Manual Installation
 1. Download the extension ZIP file

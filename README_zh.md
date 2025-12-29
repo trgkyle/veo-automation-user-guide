@@ -1,10 +1,10 @@
-# 🎬 VEO Automation - Google Flow AI VEO 自动化
+[![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
+
+# 🎬 VEO Automation v2.1.2 - Google Flow AI VEO 自动化 [![English](https://img.shields.io/badge/English-blue)](README.md) [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md)
 
 **VEO Automation** 是一个强大的 Chrome 扩展程序，可自动化 Google Flow AI VEO3 上的批量视频和图像生成。同时处理多个提示词，配置您的工作流程，并轻松自动下载生成的内容。
 
-[English](README.md) | [Tiếng Việt](README_vi.md)
-
----
+-----
 
 ## ✨ 主要功能
 
@@ -16,21 +16,20 @@
 * **🔄 图片转图片：** 使用 AI 和文本提示词转换和增强图片。
 * **💾 自动下载：** 渲染完成后立即自动将视频和图片保存到您的计算机。支持按项目名称组织文件夹。
 * **🛡️ 重试机制：** 遇到网络错误或 Google 队列已满时自动重试。
-* **⚙️ 深度自定义：**  
-   * 选择模型（Veo 2、Veo 3.1...）。  
-   * 选择宽高比（16:9、9:16、1:1）。  
-   * 设置每个提示词的视频变体数量（1-4 个变体）。
-   * 配置并发提示词（1-6 个同时）。
-   * 设置提示词延迟（0-300 秒）。
+* **⚙️ 深度自定义：**
+    * 选择模型（Veo 2、Veo 3.1...）。
+    * 选择宽高比（16:9、9:16、1:1）。
+    * 设置每个提示词的视频变体数量（1-4 个变体）。
+    * 配置并发提示词（1-6 个同时）。
+    * 设置提示词延迟（0-300 秒）。
 
----
+-----
 
 ## 📥 安装
 
 ### 方法 1：Chrome 网上应用店（推荐）
-1. 访问 Chrome 网上应用店
-2. 搜索 "VEO Automation"
-3. 点击"添加至 Chrome"
+1. 访问 [Chrome 网上应用店](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
+2. 点击"添加至 Chrome"
 
 ### 方法 2：手动安装
 1. 下载扩展程序 ZIP 文件

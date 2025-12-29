@@ -1,10 +1,10 @@
-# 🎬 VEO Automation - Tự động hóa Google Flow AI VEO
+[![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
+
+# 🎬 VEO Automation v2.1.2 - Tự động hóa Google Flow AI VEO [![English](https://img.shields.io/badge/English-blue)](README.md) [![中文](https://img.shields.io/badge/中文-red)](README_zh.md)
 
 **VEO Automation** là một tiện ích mở rộng Chrome mạnh mẽ giúp tự động hóa việc tạo video và hình ảnh hàng loạt trên Google Flow AI VEO3. Xử lý nhiều prompt cùng lúc, cấu hình quy trình làm việc và tự động tải xuống nội dung đã tạo một cách dễ dàng.
 
-[English](README.md) | [中文](README_zh.md)
-
----
+-----
 
 ## ✨ Tính năng chính
 
@@ -16,21 +16,20 @@
 * **🔄 Hình ảnh thành Hình ảnh:** Chuyển đổi và nâng cấp hình ảnh bằng AI với prompt văn bản.
 * **💾 Tự động tải xuống:** Tự động lưu video và hình ảnh vào máy của bạn ngay sau khi render xong. Hỗ trợ tổ chức thư mục theo tên dự án.
 * **🛡️ Cơ chế thử lại:** Tự động thử lại khi gặp lỗi mạng hoặc khi hàng đợi của Google đầy.
-* **⚙️ Tùy chỉnh sâu:**  
-   * Chọn Mô hình (Veo 2, Veo 3.1...).  
-   * Chọn Tỷ lệ khung hình (16:9, 9:16, 1:1).  
-   * Đặt số lượng biến thể video mỗi prompt (1-4 biến thể).
-   * Cấu hình prompt đồng thời (1-6 prompt cùng lúc).
-   * Đặt độ trễ prompt (0-300 giây).
+* **⚙️ Tùy chỉnh sâu:**
+    * Chọn Mô hình (Veo 2, Veo 3.1...).
+    * Chọn Tỷ lệ khung hình (16:9, 9:16, 1:1).
+    * Đặt số lượng biến thể video mỗi prompt (1-4 biến thể).
+    * Cấu hình prompt đồng thời (1-6 prompt cùng lúc).
+    * Đặt độ trễ prompt (0-300 giây).
 
----
+-----
 
 ## 📥 Cài đặt
 
 ### Phương pháp 1: Chrome Web Store (Khuyến nghị)
-1. Truy cập Chrome Web Store
-2. Tìm kiếm "VEO Automation"
-3. Nhấp "Thêm vào Chrome"
+1. Truy cập [Chrome Web Store](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
+2. Nhấp "Thêm vào Chrome"
 
 ### Phương pháp 2: Cài đặt thủ công
 1. Tải xuống file ZIP của tiện ích
