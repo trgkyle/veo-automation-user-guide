@@ -1,6 +1,6 @@
 [![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
 
-# 🎬 VEO Automation v3.1.6 - Google Flow AI VEO 自动化 [![English](https://img.shields.io/badge/English-blue)](README.md) [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md)
+# 🎬 VEO Automation v3.1.7 - Google Flow AI VEO 自动化 [![English](https://img.shields.io/badge/English-blue)](README.md) [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md)
 
 **VEO Automation** 是一个强大的 Chrome 扩展程序，可自动化 Google Flow AI VEO3 上的批量视频和图像生成。同时处理多个提示词，配置您的工作流程，并轻松自动下载生成的内容。
 
@@ -113,6 +113,14 @@
 
 ---
 
+### 📁 文件保存与命名（适用于所有模式）
+
+在每个模式的提示词/图片输入框下方，您可以配置文件的保存方式：
+* **保存至文件夹**：在 Chrome 默认下载文件夹中指定一个子文件夹名称（例如：`project-1`）以自动分类存储生成的文件。
+* **自动更改文件名**：开启后，扩展程序将自动使用清晰的前缀和项目目录路径重命名下载的文件；关闭后则保留浏览器默认的命名行为。
+
+---
+
 ### 📂 电子表格和文件导入
 
 - 在任意模式下，点击 **上传 .xlsx / .csv** 或 **上传 .txt** 批量导入提示词。
@@ -141,8 +149,8 @@
 - **随机等待**：设置提示词提交之间的等待时间，以避免请求速率限制。
 
 ### 模型选择
-- **模型 (视频)**：从 Veo 3.1 或 Veo 2 变体中选择。
-- **图像模型**：选择用于文本转图像生成的 AI 模型。
+- **模型 (视频)**：从 Veo 3.1 或 Veo 2 变体中选择，包括 `Veo 3.1 - Lite`、`Veo 3.1 - Lite [Lower Priority]`、`Veo 3.1 - Fast`、`Veo 3.1 - Quality` 和 `Omni Flash`。
+- **图像模型**：选择用于文本转图像生成的 AI 模型，包括 `Imagen 4`、`Nano Banana Pro` 和 `Nano Banana 2`。
 
 ### 模式特定选项
 - **默认视频选项**：可选择 4秒、6秒、8秒、10秒或合并模式（`4秒/6秒/8秒/10秒（合并）`）。
@@ -150,11 +158,14 @@
   > 使用合并连接时，当前的提示词与后续的提示词将被合成为单个视频。序列中的最后一个提示词始终默认使用标准持续时间（非合并）。
 - **默认图片模式选项**：设定为 新图片 或 上一张图片（复用前一个提示词生成的图片作为输入）。
 - **最大输入图片/视频**：为帧转视频、组件化视频和图片转图片模式配置输入资产的最大限制。
+- **角色控制设置 (Character Control Settings)**：配置**默认角色** (Default characters) 并启用/禁用角色控制。
+- **声音说话者设置 (Voice Speaker Settings)**：在提示词没有提及特定说话者时设置**默认说话者** (Default speaker)。
 
 ### 下载和高级设置
-- **自动下载质量**：选择自动下载的视频分辨率（720p, 1080p, 4K）和图片分辨率（1k, 2k, 4k）。部分质量等级需要 Ultra/Pro 方案。
+- **自动下载质量 (视频)**：选择自动下载的视频分辨率（720p, 1080p, 4K）。1080p/4K 等分辨率需要 Ultra/Pro 方案。
+- **自动下载质量 (图片)**：选择自动下载的图片分辨率（1k, 2k, 4k）。4k 分辨率需要 Ultra 方案。
 - **失败时最大重试次数**：设置生成失败时的重试次数（1-20次）。
-- **语言**：在 20 种支持的语言中选择。
+- **语言**：在 20 种支持的语言中选择（英文、中文、越南语、韩文、西班牙文、日文等）。
 
 ---
 

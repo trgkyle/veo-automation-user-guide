@@ -1,6 +1,6 @@
 [![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
 
-# 🎬 VEO Automation v3.1.6 - Google Flow AI VEO Automation [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![中文](https://img.shields.io/badge/中文-red)](README_zh.md)
+# 🎬 VEO Automation v3.1.7 - Google Flow AI VEO Automation [![Tiếng Việt](https://img.shields.io/badge/Tiếng%20Việt-green)](README_vi.md) [![中文](https://img.shields.io/badge/中文-red)](README_zh.md)
 
 **VEO Automation** is a powerful Chrome extension that automates batch video and image generation on Google Flow AI VEO3. Process multiple prompts simultaneously, configure your workflow, and automatically download generated content with ease.
 
@@ -113,6 +113,14 @@ Cars and pedestrians moving through the scene.
 
 ---
 
+### 📁 File Saving & Naming (Available in all modes)
+ 
+Below the prompt/image input fields in each mode, you can configure how files are stored:
+* **Save to folder**: Specify a subfolder name inside Chrome's default Downloads folder (e.g. `project-1`) to automatically organize generated files.
+* **Auto change file name**: Toggle to automatically rename downloaded files with clear prefixes and project folder paths, or disable to keep the browser's default naming behavior.
+ 
+---
+
 ### 📂 Spreadsheet & File Import
 
 - To import multiple prompts, click **Upload .xlsx / .csv** or **Upload .txt** inside any mode.
@@ -130,31 +138,34 @@ Cars and pedestrians moving through the scene.
 ---
 
 ## ⚙️ Settings Configuration
-
+ 
 Access the **Settings** tab to customize:
-
+ 
 ### General Settings
 - **Default Mode**: Select your frequently used generation mode.
 - **Default Aspect Ratio**: Choose 16:9, 9:16, 1:1, 3:4, or 4:3.
 - **Outputs per Prompt**: Set output quantity (1-4 images/videos) per prompt.
 - **Concurrent Prompts**: Process 1-6 prompts simultaneously (note: Concat/Agent modes run 1 concurrent task to prevent conflict).
 - **Random Delay**: Add wait times between prompt submissions to avoid rate limits.
-
+ 
 ### Model Selection
-- **Model (Video)**: Choose from Veo 3.1 or Veo 2 variants.
-- **Image Model**: Select your preferred AI model for image generation.
-
+- **Model (Video)**: Choose from Veo 3.1/Veo 2 variants, including `Veo 3.1 - Lite`, `Veo 3.1 - Lite [Lower Priority]`, `Veo 3.1 - Fast`, `Veo 3.1 - Quality`, and `Omni Flash`.
+- **Image Model**: Select your preferred AI model for image generation, including `Imagen 4`, `Nano Banana Pro`, and `Nano Banana 2`.
+ 
 ### Mode-Specific Options
 - **Default Video Option**: 4s, 6s, 8s, 10s, or Concat modes (`4s/6s/8s/10s concat`).
   > [!NOTE]
   > Chaining with Concat will combine current and subsequent prompts. The last prompt in a sequence always defaults to standard (non-concat) duration.
 - **Default Image Mode Option**: Set to New Image or Last Image (reuses previous prompt's output as input).
 - **Max Input Images/Videos**: Customize max images for Frame-to-Video, Ingredients-to-Video, and Image-to-Image.
-
+- **Character Control Settings**: Configure **Default characters** and enable/disable Character Control.
+- **Voice Speaker Settings**: Set the **Default speaker** when no speaker matches the prompt mentions.
+ 
 ### Download & Advanced Settings
-- **Auto Download Quality**: Configure download resolution for Video (720p, 1080p, 4K) and Image (1k, 2k, 4k). Some qualities require Ultra/Pro plans.
+- **Auto Download Quality (Video)**: Configure download resolution for Video (720p, 1080p, 4K). Qualities like 1080p/4K require Ultra/Pro plans.
+- **Auto Download Quality (Image)**: Configure download resolution for Image (1k, 2k, 4k). 4K quality requires the Ultra plan.
 - **Max Retries**: Configure automatic retries on failure (1-20 times).
-- **Language**: Choose from 20 supported languages.
+- **Language**: Choose from 20 supported languages (English, Tiếng Việt, 中文, 한국어, Español, 日本語, etc.).
 
 ---
 

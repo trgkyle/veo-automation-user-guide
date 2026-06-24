@@ -1,6 +1,6 @@
 [![Download Here](https://img.shields.io/badge/⬇_Download-Here-success?style=for-the-badge)](https://chromewebstore.google.com/detail/VEO%20Automation%20-%20Google%20Flow%20AI%20VEO%20Automation/fnmijgmnjpealnnadjpjilaanhhambeb)
 
-# 🎬 VEO Automation v3.1.6 - Tự động hóa Google Flow AI VEO [![English](https://img.shields.io/badge/English-blue)](README.md) [![中文](https://img.shields.io/badge/中文-red)](README_zh.md)
+# 🎬 VEO Automation v3.1.7 - Tự động hóa Google Flow AI VEO [![English](https://img.shields.io/badge/English-blue)](README.md) [![中文](https://img.shields.io/badge/中文-red)](README_zh.md)
 
 **VEO Automation** là một tiện ích mở rộng Chrome mạnh mẽ giúp tự động hóa việc tạo video và hình ảnh hàng loạt trên Google Flow AI VEO3. Xử lý nhiều prompt cùng lúc, cấu hình quy trình làm việc và tự động tải xuống nội dung đã tạo một cách dễ dàng.
 
@@ -113,6 +113,14 @@ Xe cộ và người đi bộ di chuyển qua khung cảnh.
 
 ---
 
+### 📁 Lưu trữ & Đặt tên file (Hỗ trợ ở tất cả chế độ)
+
+Bên dưới các ô nhập prompt/hình ảnh ở mỗi chế độ, bạn có thể thiết lập cách lưu trữ tệp tin tải về:
+* **Lưu vào thư mục**: Chỉ định tên thư mục con bên trong thư mục Tải xuống mặc định của Chrome (ví dụ: `project-1`) để tự động sắp xếp các tệp đã tạo.
+* **Tự động đổi tên file**: Bật tùy chọn để tiện ích tự động đổi tên các tệp đã tải xuống với tiền tố rõ ràng và đường dẫn thư mục dự án, hoặc tắt đi để giữ nguyên hành vi đặt tên mặc định của trình duyệt.
+
+---
+
 ### 📂 Nhập từ bảng tính Spreadsheet & File
 
 - Để nhập hàng loạt prompt, nhấp nút **Tải lên .xlsx / .csv** hoặc **Tải lên .txt** trong bất kỳ chế độ nào.
@@ -130,7 +138,7 @@ Xe cộ và người đi bộ di chuyển qua khung cảnh.
 ---
 
 ## ⚙️ Cấu hình Cài đặt
-
+ 
 Truy cập tab **Cài đặt** để tùy chỉnh:
 
 ### Cài đặt chung
@@ -141,8 +149,8 @@ Truy cập tab **Cài đặt** để tùy chỉnh:
 - **Thời gian chờ ngẫu nhiên**: Thêm thời gian chờ giữa các lần gửi prompt để tránh bị giới hạn tần suất.
 
 ### Chọn mô hình
-- **Mô hình**: Chọn phiên bản mô hình tạo video Veo 3.1 hoặc Veo 2.
-- **Mô hình hình ảnh**: Chọn mô hình AI tạo ảnh từ văn bản.
+- **Mô hình**: Chọn phiên bản mô hình tạo video Veo 3.1 hoặc Veo 2, bao gồm `Veo 3.1 - Lite`, `Veo 3.1 - Lite [Lower Priority]`, `Veo 3.1 - Fast`, `Veo 3.1 - Quality`, và `Omni Flash`.
+- **Mô hình hình ảnh**: Chọn mô hình AI tạo ảnh từ văn bản, bao gồm `Imagen 4`, `Nano Banana Pro`, và `Nano Banana 2`.
 
 ### Tùy chọn chế độ cụ thể
 - **Tùy chọn video mặc định**: Chọn thời lượng 4s, 6s, 8s, 10s hoặc chế độ nối tiếp (`4s/6s/8s/10s nối tiếp`).
@@ -150,11 +158,14 @@ Truy cập tab **Cài đặt** để tùy chỉnh:
   > Chế độ nối tiếp sẽ kết hợp prompt hiện tại với prompt tiếp theo. Prompt cuối cùng trong chuỗi sẽ luôn sử dụng thời lượng tiêu chuẩn (không nối tiếp).
 - **Tùy chọn chế độ ảnh mặc định**: Đặt thành Ảnh mới hoặc Ảnh cuối (tái sử dụng kết quả của prompt trước làm đầu vào).
 - **Số hình ảnh/video đầu vào tối đa**: Cài đặt giới hạn số ảnh cho Khung hình thành video, Thành phần thành video, và Hình ảnh thành hình ảnh.
+- **Cấu hình Character Control**: Thiết lập **Nhân vật mặc định** (Default characters) và bật/tắt kiểm soát nhân vật.
+- **Cấu hình giọng nói diễn giả**: Đặt **Diễn giả mặc định** (Default speaker) khi không có diễn giả nào khớp trong prompt.
 
 ### Tải xuống & Cài đặt nâng cao
-- **Chất lượng tải xuống tự động**: Cài đặt độ phân giải tải về cho Video (720p, 1080p, 4K) và Hình ảnh (1k, 2k, 4k). Một số chất lượng yêu cầu gói Ultra/Pro.
+- **Chất lượng tải xuống tự động (Video)**: Cài đặt độ phân giải tải về cho Video (720p, 1080p, 4K). Các chất lượng 1080p/4K yêu cầu gói Ultra/Pro.
+- **Chất lượng tải xuống tự động (Hình ảnh)**: Cài đặt chất lượng tải về cho Hình ảnh (1k, 2k, 4k). Chất lượng 4k yêu cầu gói Ultra.
 - **Số lần thử lại tối đa**: Cấu hình tự động thử lại khi lỗi (1-20 lần).
-- **Ngôn ngữ**: Chọn ngôn ngữ hiển thị trong số 20 ngôn ngữ được hỗ trợ.
+- **Ngôn ngữ**: Chọn ngôn ngữ hiển thị trong số 20 ngôn ngữ được hỗ trợ (tiếng Anh, tiếng Việt, tiếng Trung, tiếng Hàn, tiếng Tây Ban Nha, tiếng Nhật, v.v.).
 
 ---
 
