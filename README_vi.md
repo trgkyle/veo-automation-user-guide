@@ -150,7 +150,7 @@ Truy cập tab **Cài đặt** để tùy chỉnh:
 
 ### Chọn mô hình
 - **Mô hình**: Chọn phiên bản mô hình tạo video Veo 3.1 hoặc Veo 2, bao gồm `Veo 3.1 - Lite`, `Veo 3.1 - Lite [Lower Priority]`, `Veo 3.1 - Fast`, `Veo 3.1 - Quality`, và `Omni Flash`.
-- **Mô hình hình ảnh**: Chọn mô hình AI tạo ảnh từ văn bản, bao gồm `Imagen 4`, `Nano Banana Pro`, và `Nano Banana 2`.
+- **Mô hình hình ảnh**: Chọn mô hình AI tạo ảnh từ văn bản, bao gồm `Nano Banana 2 Lite`, `Nano Banana Pro`, và `Nano Banana 2`.
 
 ### Tùy chọn chế độ cụ thể
 - **Tùy chọn video mặc định**: Chọn thời lượng 4s, 6s, 8s, 10s hoặc chế độ nối tiếp (`4s/6s/8s/10s nối tiếp`).

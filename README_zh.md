@@ -150,7 +150,7 @@
 
 ### 模型选择
 - **模型 (视频)**：从 Veo 3.1 或 Veo 2 变体中选择，包括 `Veo 3.1 - Lite`、`Veo 3.1 - Lite [Lower Priority]`、`Veo 3.1 - Fast`、`Veo 3.1 - Quality` 和 `Omni Flash`。
-- **图像模型**：选择用于文本转图像生成的 AI 模型，包括 `Imagen 4`、`Nano Banana Pro` 和 `Nano Banana 2`。
+- **图像模型**：选择用于文本转图像生成的 AI 模型，包括 `Nano Banana 2 Lite`、`Nano Banana Pro` 和 `Nano Banana 2`。
 
 ### 模式特定选项
 - **默认视频选项**：可选择 4秒、6秒、8秒、10秒或合并模式（`4秒/6秒/8秒/10秒（合并）`）。

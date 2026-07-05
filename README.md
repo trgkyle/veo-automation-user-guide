@@ -150,7 +150,7 @@ Access the **Settings** tab to customize:
  
 ### Model Selection
 - **Model (Video)**: Choose from Veo 3.1/Veo 2 variants, including `Veo 3.1 - Lite`, `Veo 3.1 - Lite [Lower Priority]`, `Veo 3.1 - Fast`, `Veo 3.1 - Quality`, and `Omni Flash`.
-- **Image Model**: Select your preferred AI model for image generation, including `Imagen 4`, `Nano Banana Pro`, and `Nano Banana 2`.
+- **Image Model**: Select your preferred AI model for image generation, including `Nano Banana 2 Lite`, `Nano Banana Pro`, and `Nano Banana 2`.
  
 ### Mode-Specific Options
 - **Default Video Option**: 4s, 6s, 8s, 10s, or Concat modes (`4s/6s/8s/10s concat`).
