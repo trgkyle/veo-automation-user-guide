@@ -9,6 +9,7 @@
 ## ✨ Key Features
 
 * **🚀 Queue Support:** Add multiple prompts to the waiting list instead of manually operating each prompt. The tool will automatically process tasks one by one.
+* **🧩 Workflow (visual drag-and-drop editor):** Connect prompts, images and generators on a canvas — e.g. generate images, then turn those images into videos automatically. Save several workflows, run one node or all of them, import/export them as files.
 * **📝 Text-to-Video:** Import `.txt`, `.xlsx`, or `.csv` files containing hundreds of prompts to create videos from text.
 * **🖼️ Frame-to-Video:** Use a static image and add automatic motion effects. Supports using Start frame or both Start & End frames per prompt.
 * **🎨 Ingredients-to-Video:** Animate UI components, interface elements, or characters into videos. Supports auto-matching character images based on filenames.
@@ -135,6 +136,87 @@ Below the prompt/image input fields in each mode, you can configure how files ar
 * Click **Remove** to discard tasks or **Stop** to cancel the currently running queue.
 * Delay countdowns between prompts are shown in real-time.
 
+### 🧩 Workflow (Visual Drag-and-Drop Editor)
+
+Workflow is a visual drag-and-drop editor for flows with several steps — for example: generate a few images, then use those images to make videos, then continue each video with another prompt. It opens in its own window and runs on your open Google Flow tab.
+
+#### Open it
+
+* Click **Workflow** in the Control tab (bottom row).
+* Already typed prompts or uploaded images in the side panel? Hover **Workflow** and click **Convert to workflow**: your prompts, each prompt's mode and your images become nodes in the editor, ready to run.
+
+#### The screen
+
+| Area | What it holds |
+| :--- | :--- |
+| **Left** | **Nodes** (click or drag one onto the canvas) and **Your workflows** (all saved workflows) |
+| **Top bar** | The canvas tools: Undo/Redo, **Auto arrange**, fit view, **Example**, clear. On the right: the **Details** button, **Shortcuts** and the Google Flow tab status |
+| **Canvas** | Your nodes. Top-left: **Run all** (and **Stop** while running) and **Enable background mode** |
+
+The **Details** button shows what needs attention: **Issues (n)** in red/yellow when something blocks a run, **Running 3/8** while generating. Click it to open a panel with the issues (click one to jump to the node), live progress, the run plan and the settings it uses.
+
+#### Nodes
+
+| Node | What it does |
+| :--- | :--- |
+| **Enter prompt** | One or more prompts, separated by a **blank line** |
+| **Upload image** | Your images (drop files on it). Hover an image: 🔍 to view it larger, ✕ to remove it, the grip in the corner to drag it to another position. The order (or the sort menu) decides which prompt gets which image |
+| **Generate Image** | Text to Image, or Image to Image when images are connected. Options: **Image Mode per Prompt**, **Max Input Images per Prompt**, **Auto-add character images** |
+| **Generate Video** | Text to Video, or with images connected **Frame to Video** / **Components to Video**. Options: **Video Mode per Prompt**, images per prompt (shared with the side panel settings), **Auto-add character images** (Components to Video) |
+
+Generate nodes are named automatically from their first prompt (`image_…` / `video_…`). Each prompt row shows the images it will receive, so you can check before running. Their preview takes the **aspect ratio** from the settings (a 9:16 node is narrower and taller).
+
+**Frame to Video** can use a start frame only, or a **start frame and end frame** (same setting as the side panel). With start and end frame each prompt takes 2 images in order (a prompt continuing the previous video takes 1); if there are not enough images, the node shows a warning and can't run.
+
+#### Connect nodes
+
+Drag from the round handle on the right of a node and **drop it anywhere on the other node** — the right input is picked for you. Nodes that accept the connection light up while you drag.
+
+| From | To | Meaning |
+| :--- | :--- | :--- |
+| Enter prompt | Generate Image / Generate Video | The prompts to generate |
+| Upload image | Generate Image / Generate Video | Reference images, start frames or components |
+| Generate Image | Generate Image / Generate Video | The **generated images** become that node's input (it runs after the images are ready) |
+| Generate Video — **last frame** output | Generate Video | The next video **continues from the last frame** of this one |
+| Generate Video — **last frame** output | Generate Image | The **last frame** of each video becomes an input image (it runs after the video is ready) |
+
+#### Run
+
+* **Run all** (top-left, or `Ctrl/⌘ + Enter`) runs the whole workflow in the right order: nodes waiting for generated images start automatically once those images exist.
+* If **Run all** is disabled, the top bar shows **Issues (n)**: click it to see what to fix.
+* Each Generate node also has its own **Run** button to run only that node. It is disabled until the nodes it depends on have finished (hover to see why).
+* **Stop** cancels what is still running.
+* While running, the connections into the node that is generating light up and flow, so you can see where the workflow is.
+
+> ⚠️ **Chrome pauses Google Flow when its tab isn't visible** (for example when the workflow window covers it full screen). Click **Enable background mode** (under **Run all** in the workflow, or in the side panel), then pick the Google Flow tab in Chrome's dialog. This shares the Google Flow tab (nothing is recorded or sent anywhere) so it keeps generating behind other windows. The green **Running in background** badge shows it's on; click ✕ to stop it.
+
+#### Results
+
+Results appear inside each Generate node. Hover a result: 🔍 opens it large, ✕ removes it (the eraser clears all results of the node). Videos play on hover. Files are still downloaded as usual.
+
+The next node uses the **first result of each prompt**. To choose which one, drag a result by the grip in its top-left corner onto another result to swap them (images and videos).
+
+#### Manage workflows
+
+Under **Your workflows** (left): **New**, **Import**, and for each workflow the **⋯** menu — **Rename** (or double-click the name), **Duplicate**, **Export**, **Delete**. Everything is saved automatically.
+
+* **Export** downloads a `.json` file. It starts with `//` comment lines that describe every node, property and connection, so you can give the file to an AI assistant and ask it to write new workflows. The comment lines are removed on import.
+* **Import** a file with the button, or simply **drag the `.json` file onto the canvas**.
+
+#### Editing shortcuts
+
+Click **Shortcuts** in the top bar (or press `?`) to see them all.
+
+| Action | Keys |
+| :--- | :--- |
+| Undo / Redo | `Ctrl/⌘ + Z` / `Ctrl/⌘ + Shift + Z` |
+| Copy / Cut / Paste nodes (also into another workflow) | `Ctrl/⌘ + C / X / V` |
+| Duplicate selection | `Ctrl/⌘ + D` |
+| Select all / Add to selection / Box select | `Ctrl/⌘ + A` / `Ctrl/⌘ + click` / `Shift + drag` |
+| Auto arrange | `Shift + A` |
+| Delete selected | `Delete` |
+| Run all / Run in background | `Ctrl/⌘ + Enter` / `Ctrl/⌘ + Shift + Enter` |
+
 ---
 
 ## ⚙️ Settings Configuration
@@ -201,6 +283,10 @@ VEO Automation offers a **Free plan** and a **Max plan** ($3/month):
 | **Video/Image not downloading** | Disable Chrome's download prompt: Chrome Settings -> Downloads -> **Turn off** *"Ask where to save each file before downloading"*. |
 | **Policy Error** | Google flagged the prompt/image. The tool automatically skips it and continues to the next task. |
 | **Screen Zoomed Out** | The extension automatically zooms out to cover and locate UI buttons. Do not adjust browser zoom manually while running. |
+| **Workflow: generation stays at "Generating" forever** | Chrome paused the hidden Google Flow tab. Turn on **Enable background mode** (or **Run in background**), or keep Google Flow visible. |
+| **Workflow: a node's Run button is disabled** | Hover it: run the node it depends on first, or fix the issue shown (e.g. no prompt connected). |
+| **Workflow: Run all is disabled** | Click **Issues (n)** in the top bar to see what to fix; click an issue to jump to its node. |
+| **Workflow: "No Google Flow tab found"** | Open [Google Flow](https://labs.google/fx/tools/flow) in a tab (the green dot in the top bar shows it's connected). |
 
 ---
 
